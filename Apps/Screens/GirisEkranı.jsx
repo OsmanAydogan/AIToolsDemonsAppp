@@ -3,6 +3,7 @@ import React from 'react';
 import * as WebBrowser from "expo-web-browser";
 import { useWarmUpBrowser } from '../../hooks/useWarmUpBrowser';
 import { useOAuth } from '@clerk/clerk-expo';
+
 WebBrowser.maybeCompleteAuthSession();
 
 export default function GirisEkranı() {
@@ -11,7 +12,7 @@ export default function GirisEkranı() {
 
     const onPress = React.useCallback(async () => {
       try {
-        const { createdSessionId, signIn, signUp, setActive } =
+        const { createdSessionId, setActive } =
           await startOAuthFlow();
    
         if (createdSessionId) {
