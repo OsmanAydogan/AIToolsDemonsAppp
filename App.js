@@ -3,6 +3,9 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import GirisEkranı from './Apps/Screens/GirisEkranı';
+import TabNavigation from './Apps/Navigations/TabNavigation';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 export default function App() {
   return (
@@ -10,12 +13,26 @@ export default function App() {
       
     <View className="flex-1  bg-white-50">
       <StatusBar style="auto" />
-      <SignedIn>
-          <Text className="text-center top-16">Giriş Yaptınız...</Text>
+
+
+      <NavigationContainer>
+          <TabNavigation/>
+        </NavigationContainer>
+        
+
+       {/* <SignedIn>
+
+      <NavigationContainer>
+
+      <TabNavigation/>
+
+      </NavigationContainer>
+
         </SignedIn>
         <SignedOut>
       <GirisEkranı/>
-        </SignedOut>
+        </SignedOut>  */}
+
     </View>
     </ClerkProvider>
   );
