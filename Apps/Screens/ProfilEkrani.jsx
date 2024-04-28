@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
@@ -104,3 +105,15 @@ const styles = StyleSheet.create({
 });
 
 export default ProfilEkrani;
+=======
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export default function ProfilEkrani() {
+  return (
+    <View>
+      <Text>ProfilEkrani</Text>
+    </View>
+  )
+}
+>>>>>>> 3eeee139d005c2fff95e17133d1f3581883bf14d
