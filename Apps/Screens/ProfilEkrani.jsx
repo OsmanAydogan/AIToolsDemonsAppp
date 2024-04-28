@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
@@ -104,3 +105,15 @@ const styles = StyleSheet.create({
 });
 
 export default ProfilEkrani;
+=======
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export default function ProfilEkrani() {
+  return (
+    <View>
+      <Text>ProfilEkrani</Text>
+    </View>
+  )
+}
+>>>>>>> 03c96bb4 (NavBottom ve Gönderi ekle kısmı eklendi, ek olarak veritabanı bağlantısı)

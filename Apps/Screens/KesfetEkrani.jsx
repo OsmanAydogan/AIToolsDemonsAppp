@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { View, TextInput, StyleSheet, FlatList } from 'react-native';
 
@@ -68,3 +69,17 @@ const styles = StyleSheet.create({
 });
 
 export default KesfetEkrani;
+=======
+import { View, Text } from 'react-native'
+import React from 'react'
+
+const KesfetEkrani = () => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Keşfet</Text>
+  </View>
+  )
+}
+
+export default KesfetEkrani
+>>>>>>> 03c96bb4 (NavBottom ve Gönderi ekle kısmı eklendi, ek olarak veritabanı bağlantısı)
