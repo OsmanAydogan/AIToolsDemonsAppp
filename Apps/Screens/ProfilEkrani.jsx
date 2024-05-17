@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
@@ -6,7 +5,7 @@ const ProfilEkrani = () => {
   return (
     <View style={styles.container}>
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Kullanıcı Bilgileri</Text>
+        <Text style={styles.sectionTitle}>Kullanıcı Bilgileri (Deneme)</Text>
         <View style={styles.userInfo}>
           <Image source={require('./../../assets/images/bg.jpg')} style={styles.profilePicture} />
           <View>
@@ -105,15 +104,3 @@ const styles = StyleSheet.create({
 });
 
 export default ProfilEkrani;
-=======
-import { View, Text } from 'react-native'
-import React from 'react'
-
-export default function ProfilEkrani() {
-  return (
-    <View>
-      <Text>ProfilEkrani</Text>
-    </View>
-  )
-}
->>>>>>> 3eeee139d005c2fff95e17133d1f3581883bf14d
