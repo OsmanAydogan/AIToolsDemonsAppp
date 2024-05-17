@@ -1,14 +1,16 @@
 import { View, Text } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState  } from 'react'
 import {getDocs, getFirestore, collection } from "firebase/firestore";
 import { app } from '../../firebaseConfig';
+import { Formik } from 'formik';
 
 
 
 
 export default function GonderiEkleEkrani() {
-
+ 
     const db = getFirestore(app);
+    const [categoryList, setCategoryList]=useState([]);
     useEffect(()=>{
         getCategoryList();
     },[])
@@ -18,11 +20,15 @@ export default function GonderiEkleEkrani() {
 
         querySnapShot.forEach((doc)=>{
             console.log("Docs:",doc.data());
+            setCategoryList = (categoryList => [...categoryList,doc.data])
         })
     }
   return (
-    <View>
-      <Text>GonderiEkleEkrani</Text>
+    <View className = "p-10">
+      <Formik>
+
+
+      </Formik>
     </View>
   )
 }
